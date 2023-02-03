@@ -2,12 +2,12 @@ Config = {}
 Config.Locale = 'en' -- Use Search function here in config.lua. Search for "Locale" for fast access to translations
 -- Languages default by Project Sloth: ar, cs, da, de, en, es, fa, fi, fr, ge, it, nl, pl, pt, sk, sv, tr
 
-Config.NotificationType = "ESX" -- ESX, ox_lib
+Config.NotificationType = "ox_lib" -- ESX, ox_lib
 
-Config.OpenMenu = 'I' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+Config.OpenMenu = '' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 Config.CruiseControl = 'CAPITAL' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 Config.StartEngine = 'G' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
-Config.ToggleSeatbelt = 'B' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+Config.ToggleSeatbelt = '' -- https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 Config.StressChance = 0.1 -- Default: 10% -- Percentage Stress Chance When Shooting (0-1)
 Config.UseMPH = true -- If true speed math will be done as MPH, if false KPH will be used (YOU HAVE TO CHANGE CONTENT IN STYLES.CSS TO DISPLAY THE CORRECT TEXT)
 Config.MinimumStress = 50 -- Minimum Stress Level For Screen Shaking
@@ -18,7 +18,7 @@ Config.FuelScript = 'ox-fuel' -- if your using legacy fuel turn ox fuel to Legac
 
 
 -- Admin only to change hud icons/shapes
-Config.AdminOnly = false
+Config.AdminOnly = true
 
 -- Stress
 Config.WhitelistedWeaponArmed = { -- weapons specifically whitelisted to not show armed mode

@@ -1,11 +1,11 @@
 ESX = exports['es_extended']:getSharedObject()
 
 -- Keymapping Shi
-RegisterKeyMapping('menu', 'Open Menu', 'keyboard', Config.OpenMenu)
+--RegisterKeyMapping('menu', 'Open Menu', 'keyboard', Config.OpenMenu)
 
-RegisterKeyMapping('/engine', 'Toggle Engine', 'keyboard', Config.StartEngine)
+--RegisterKeyMapping('/engine', 'Toggle Engine', 'keyboard', Config.StartEngine)
 
-RegisterKeyMapping('/toggleseatbelt', 'Toggle Seatbelt', 'keyboard', Config.ToggleSeatbelt)
+--RegisterKeyMapping('/toggleseatbelt', 'Toggle Seatbelt', 'keyboard', Config.ToggleSeatbelt)
 
 local PlayerData = ESX.GetPlayerData()
 local config = Config
@@ -180,7 +180,7 @@ AddEventHandler("pma-voice:radioActive", function(isRadioTalking)
 end)
 
 -- Callbacks & Events
-RegisterCommand('menu', function()
+RegisterCommand('hudmenu', function()
     Wait(50)
     if showMenu then return end
     TriggerEvent("hud:client:playOpenMenuSounds")
@@ -1034,9 +1034,9 @@ CreateThread(function()
                     if status then hunger = status.val / 10000 end
                   end)
                   
-               --     TriggerEvent('esx_status:getStatus', 'stress', function(status)
-                --      if status then stress = status.val / 10000 end                              ---- STRESS SHI UNCOMMENT THIS
-                --    end)
+           --     TriggerEvent('esx_status:getStatus', 'stress', function(status)
+            --      if status then stress = status.val / 10000 end                              ---- STRESS SHI UNCOMMENT THIS
+            --    end)
 
                   TriggerEvent('esx_status:getStatus', 'thirst', function(status)
                     if status then thirst = status.val / 10000 end

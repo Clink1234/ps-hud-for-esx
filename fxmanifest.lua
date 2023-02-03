@@ -17,8 +17,8 @@ shared_scripts {
 
 client_script  {
 	'client.lua',
-	'seatbelt.lua',
-	'cruise.lua'
+	--'seatbelt.lua',
+	--'cruise.lua'
 }
 server_script {
 	'server.lua',
